@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+</head>
+<body>
+<script>
+class Movie{                              //A
+    constructor(title,studio,rating){
+     this.title=title;
+     this.studio=studio;
+   
+    if(rating== undefined){
+        this.rating="PG"}
+        else{this.rating=rating}
+    
+    }
+    getPG(arr){
+            console.log(arr)
+            // rating=>PG -3 obj
+            // return this
+            let pgResult=[]
+            for(var i=0;i<arr.length;i++){
+                if(arr[i].rating=="PG"){
+                    pgResult.push(arr[i])
+                }
+            }
+            console.log(pgResult)
+            //
+        }
+        // getXW(){
+        //     console.log("another method")
+        //     return this
+        // }
+
+    }
+    let film1=new Movie("Casino Royale","Eon Productions","PG­13")
+    let film2=new Movie("bahubali","XYZ Productions")//PG
+    let film3=new Movie("rrr","PQR Productions","PG24")
+    let film4=new Movie("spider","DFG Productions","PG­25")
+    let film5=new Movie("leo","YHN Productions")//PG
+    let film6=new Movie("leo2","FHH Productions","PG26")
+    let film7=new Movie("rrr2","KJH Productions","PG")//PG
+
+    const array=[film1,film2,film3,film4,film5,film6,film7]
+
+    // film1.getPG(array).getXW()
+    film1.getPG(array)
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

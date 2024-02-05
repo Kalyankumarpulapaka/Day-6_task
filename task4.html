@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+</head>
+<body>
+<script>
+class uber{
+    constructor(km){
+     this.km=km,
+     this.price=km*10
+
+    }
+    get_price(){
+    console.log("the total amount will be ",this.price)
+    }
+
+}
+var ride= new uber(50);
+var ride2=new uber(100);
+ride.get_price() ;
+ride2.get_price();
+
+</script>
+</body>
+</html>
